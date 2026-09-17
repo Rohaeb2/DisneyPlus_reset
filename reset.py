@@ -39,7 +39,6 @@ def run_scr(digits):
     except Exception as error_msg:
         print(f"Failed to find element due to: {error_msg}")
 
-        # 📸 THE MASTER TOOL: Take a photo of the current layout!
         screenshot_path = "/home/ubuntu/rest/"
         driver.save_screenshot(f"{screenshot_path}/stage1")
         print(f"Saved a screenshot of what the server sees to: {screenshot_path}")
