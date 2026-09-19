@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/styles.css">
+
+</head>
+<body>
+    <h1>Disney+</h1>
+        <div class="reset-main-content">
+            <div id="reset-form">
+            <h2>Please Enter the 8 digit code below</h2>
+            <h3>Note: Do not include the dash with the code</h3>
+        <form action="/reset" method="post">
+            <div class="form-group">
+                <label for="otp">One-time-Code</label><br>
+                <input type="text" id="otp" name="otp"><br>
+            </div>
+            <button class="button" type="submit">Submit</button><br>       
+         </form>
+        </div>
+    
+</body>
+</html>
