@@ -11,10 +11,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 digits_val = os.getenv('code')
+email_text = os.getenv("DISNEY_EMAIL")
+password_text = os.getenv("DISNEY_PASSWORD")
 def run_scr(digits):
     load_dotenv()
-    email_text = os.getenv("EMAIL")
-    password_text = os.getenv("PASSWORD")
     #chrome_options = Options()
     #chrome_options.add_argument("--headless=new")
     #chrome_options.add_argument("--no-sandbox")
