@@ -9,10 +9,15 @@ jobs:
   complete-code:
     runs-on: self-hosted
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
       - name: Show the code we got
         shell: powershell
         run: Write-Output "Got Code ${{ github.event.client_payload.code }}"
       - name: Variable saved?
         shell: powershell
         run: Write-Output "${{env.code}}"
+      - name: Run File
+        shell: powershell
+        run: python3 reset.py
         
