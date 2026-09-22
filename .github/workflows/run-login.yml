@@ -10,7 +10,9 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Show the code we got
-        run: echo "Got Code ${{ github.event.client_payload.code }}"
+        shell: pwsh
+        run: Write-Output "Got Code ${{ github.event.client_payload.code }}"
       - name: Variable saved?
-        run: echo "${{env.code}}"
+        shell: pwsh
+        run: Write-Output "${{env.code}}"
         
