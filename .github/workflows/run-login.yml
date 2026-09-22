@@ -8,6 +8,7 @@ env:
 jobs:
   complete-code:
     runs-on: self-hosted
+    timeout-minutes: 2
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
