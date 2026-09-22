@@ -41,7 +41,6 @@ def run_scr(digits):
         print(f"Saved a screenshot of what the server sees to: {screenshot_path}")
     finally:
         driver.quit()
-        return ("FAILED")
 
     #button = driver.find_element(By.CSS_SELECTOR, "input[name='otp']")
     try:
