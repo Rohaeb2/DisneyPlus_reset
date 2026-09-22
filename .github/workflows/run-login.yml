@@ -5,6 +5,8 @@ on:
 
 env:
     code: ${{ github.event.client_payload.code }}
+    DISNEY_EMAIL: ${{ secrets.DISNEY_EMAIL }}
+    DISNEY_PASSWORD: ${{ secrets.DISNEY_PASSWORD }}
 jobs:
   complete-code:
     runs-on: self-hosted
