@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-digits = os.getenv('code')
+digits_val = os.getenv('code')
 def run_scr(digits):
     load_dotenv()
     email_text = os.getenv("EMAIL")
@@ -85,5 +85,5 @@ def run_scr(digits):
         driver.quit()
         return ("completed")
 
-digits_val="08444926"
+
 run_scr(digits_val)
