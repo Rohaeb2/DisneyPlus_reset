@@ -7,7 +7,7 @@ env:
     code: ${{ github.event.client_payload.code }}
 jobs:
   complete-code:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Show the code we got
         run: echo "Got Code ${{ github.event.client_payload.code }}"
