@@ -40,7 +40,7 @@ def run_scr(digits):
         driver.save_screenshot(f"{screenshot_path}/stage1")
         print(f"Saved a screenshot of what the server sees to: {screenshot_path}")
     finally:
-        driver.quit()
+        pass
 
     #button = driver.find_element(By.CSS_SELECTOR, "input[name='otp']")
     try:
