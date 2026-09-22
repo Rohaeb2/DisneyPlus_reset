@@ -3,10 +3,14 @@ on:
   repository_dispatch: 
     types: [enter-code]
 
-
+env:
+    code: ${{ github.event.client_payload.code }}
 jobs:
   complete-code:
     runs-on: ubuntu-latest
     steps:
       - name: Show the code we got
         run: echo "Got Code ${{ github.event.client_payload.code }}"
+      - name: Variable saved?
+        run: echo "${{env.code}}"
+        
