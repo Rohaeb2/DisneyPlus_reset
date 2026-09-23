@@ -80,7 +80,7 @@ def run_scr(digits):
         pass
     flag = True
     if flag is True:
-        time.sleep(4)
+        time.sleep(10)
         driver.quit()
         return ("completed")
 
